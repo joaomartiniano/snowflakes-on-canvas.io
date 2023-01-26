@@ -2,9 +2,22 @@
     Licensed under the MIT license. */
 
 
-html, body {
+html, body { 
     margin: 0; padding: 0;
+    font-family: Calibri, sans-serif;
 }
+
+#back {
+    position: fixed; left: 2vw; top: 4vh;
+padding: 0.6rem 1rem; background-color: rgba(0, 0, 0, 0.2); color: #fff; border-radius: 12px;
+    transition: background-color 800ms 300ms;
+}
+
+#back:hover { background-color: #ffbe0b; }
+
+#back:hover a { color: #000; }
+
+a { text-decoration: none; color: #fff; transition: color 800ms 300ms; }
 
 canvas {
     background: rgb(15,115,136);
