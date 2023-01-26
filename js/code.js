@@ -7,9 +7,17 @@ let snowFlakes = [];
 
 window.onload = init;
 
+addEventListener("resize", (event) => { 
+    canvas.width = document.documentElement.clientWidth;
+    canvas.height = document.documentElement.clientHeight;
+ });
+
 function init() {
     canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
+
+    canvas.width = document.documentElement.clientWidth;
+    canvas.height = document.documentElement.clientHeight;
 
     for (i = 1; i <= 800; ++i)
     {
